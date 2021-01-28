@@ -1,0 +1,12 @@
+[
+    {"INT_Discount":1,"INT_ID":1003,"INT_RewardPoolId":1000001},
+    {"INT_Discount":1,"INT_ID":1004,"INT_RewardPoolId":1000002},
+    {"INT_Discount":1,"INT_ID":1005,"INT_RewardPoolId":1000003},
+    {"INT_Discount":1,"INT_ID":2001,"INT_RewardPoolId":1000004},
+    {"INT_Discount":1,"INT_ID":2002,"INT_RewardPoolId":1000005},
+    {"INT_Discount":1,"INT_ID":3000,"INT_RewardPoolId":1000006},
+    {"INT_Discount":1,"INT_ID":4001,"INT_RewardPoolId":1000006},
+    {"INT_Discount":1,"INT_ID":4002,"INT_RewardPoolId":1000006},
+    {"INT_Discount":1,"INT_ID":4003,"INT_RewardPoolId":1000006},
+    {"INT_Discount":1,"INT_ID":4004,"INT_RewardPoolId":1000006}
+]

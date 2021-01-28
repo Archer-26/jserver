@@ -1,0 +1,100 @@
+syntax = "proto3";
+package inner_message;
+option go_package = "/inner";
+
+enum INNER_MSG
+{
+    //------------------ 服务器内部通信使用 id段 10000-100000 --------------------------------------
+    ERROR             = 0;
+    INNER_SEGMENT_BEGIN = 10000;// 消息段begin
+
+
+    L2D_ALL_USER_REQ           = 10001;     // L2dAllUserReq   login 向db请求所有用户角色数据
+    D2L_ALL_USER_RES           = 10002;     // D2lAllUserRes
+    L2D_USER_SAVE              = 10003;     // L2dUserSave
+
+    G2D_MODEL_SAVE             = 10006;     // G2DModelSave  存储数据
+    G2D_ROLE_REQ               = 10007;     // G2DRoleReq  game请求role数据
+    D2G_ROLE_RES               = 10008;     // D2GRoleRes
+
+    GT2G_SESSION_CLOSED        = 10010;     // GT2GSessionClosed      gatesession通知用户网络断开
+    L2GT_SESSION_ASSIGN_GAME   = 10011;     // L2GSessionAssignGame    通知gate,gatesession分配gameActor
+    L2GT_USER_SESSION_DISABLED = 10012;     // L2GTUserSessionDisabled login通知game,玩家顶号，旧session失效
+    G2L_ROLE_OFFLINE           = 10013;     // G2LRoleOffline          game通知login，玩家离线
+    G2D_GAME_STOP              = 10014;     // G2DGameStop             game通知gamedb 停服
+
+
+    INNER_SEGMENT_END  = 100000;// 消息段end
+}
+
+message Error
+{}
+
+// 存储信息
+message G2DModelSave
+{
+    bytes Data       = 1;
+    string ModelName = 2;
+    int64   RID      = 3;
+}
+
+// login 请求所有角色数据
+message L2DAllUserReq
+{}
+
+message D2LAllUserRes
+{
+    bytes Data = 1; // models.GameUser
+}
+
+// login 请求回存新玩家
+message L2DUserSave
+{
+    bytes Data = 1; // models.GameUser
+}
+
+// game请求role数据
+message G2DRoleReq
+{
+    int64 CallbackId = 1; // 回调Id
+    int64 RID        = 2;
+}
+
+message D2GRoleRes
+{
+    int64 CallbackId             = 1; // 回调Id
+    int32 valid                  = 2; // 数据是否找到 0.成功 1.未找到角色
+    int64 RID                    = 3;
+    map<string,bytes> WholeInfo  = 4; // 角色各个模块的数据
+}
+
+// gatesession断开,gate通知game
+message GT2GSessionClosed
+{
+    string GateSession = 1; // 断开的session
+}
+
+// login通知gate 为session分配gameActor
+message L2GTSessionAssignGame
+{
+    string GateSession = 1; //
+    string GameActorId = 2; // 分配的游戏Actor
+}
+
+// game通知login，玩家离线
+message G2LRoleOffline
+{
+   int64 UID        = 1;
+   int64 RID        = 2;
+}
+// game通知login，玩家离线
+message G2DGameStop
+{
+}
+
+// login通知game,玩家顶号，旧session失效
+message L2GTUserSessionDisabled
+{
+   string GateSession = 1;
+   int64 UID          = 2;
+}

@@ -1,0 +1,6 @@
+[
+    {"FLOAT_IncRate":0,"INT_DftOdds":8,"INT_ID":321,"INT_InitMax":0,"INT_InitMin":0,"INT_RstMax":0,"INT_RstMin":0},
+    {"FLOAT_IncRate":0,"INT_DftOdds":20,"INT_ID":322,"INT_InitMax":0,"INT_InitMin":0,"INT_RstMax":0,"INT_RstMin":0},
+    {"FLOAT_IncRate":0.08319444,"INT_DftOdds":0,"INT_ID":323,"INT_InitMax":10005,"INT_InitMin":10000,"INT_RstMax":12000,"INT_RstMin":11000},
+    {"FLOAT_IncRate":0.02111111,"INT_DftOdds":0,"INT_ID":324,"INT_InitMax":204,"INT_InitMin":200,"INT_RstMax":250,"INT_RstMin":230}
+]

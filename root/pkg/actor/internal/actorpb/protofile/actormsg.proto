@@ -1,0 +1,48 @@
+syntax = "proto3";
+package protofile;
+option go_package = "/protofile";
+
+enum MSG_TYPE
+{
+    //------------------ actor proto 服务器内部通信使用 id段 1-1000 --------------------------------------
+    ACTOR_MSG           = 0;                  // 
+    ACTOR_HEATBEAT_PING = 1;                  // 心跳 主动连接的一方发送
+    ACTOR_HEATBEAT_PONG = 2;                  // 心跳 被动连接回复
+    ACTOR_REGIST        = 3;                  // 注册
+    ACTOR_MESSAGE       = 4;                  // 传输数据
+    ACTOR_DETECT        = 5;                  // 探测信号
+    ACTOR_DETECT_RESP   = 6;                  // 探测信号返回
+}
+message ActorMsg
+{}
+
+message ActorHeatbeatPing
+{
+    string Addr = 1;
+}
+message ActorHeatbeatPong
+{
+    string Addr = 1;
+}
+
+message ActorRegist
+{
+    repeated string actorId = 1;
+}
+
+message ActorMessage
+{
+    string GateSession  = 1; // gate1:50400001
+    string SourceId     = 2;
+    string TargetId     = 3;
+    int32  MsgId        = 4;
+    bytes Data          = 5;
+}
+
+message ActorDetect
+{
+}
+
+message ActorDetectResp
+{
+}

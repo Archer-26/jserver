@@ -1,0 +1,16 @@
+[
+    {"STR_DEFAULT":"NotoSansCJKRegular","STR_FONT_1":"NotoSansCJKRegular","STR_FONT_2":"NotoSansCJKRegular","STR_LANGUAGE":"cn"},
+    {"STR_DEFAULT":"07NikumaruFont","STR_FONT_1":"07NikumaruFont","STR_FONT_2":"NotoSansCJKRegular","STR_LANGUAGE":"en"},
+    {"STR_DEFAULT":"NotoSansCJKRegular","STR_FONT_1":"NotoSansCJKRegular","STR_FONT_2":"NotoSansCJKRegular","STR_LANGUAGE":"fr"},
+    {"STR_DEFAULT":"NotoSansCJKRegular","STR_FONT_1":"NotoSansCJKRegular","STR_FONT_2":"NotoSansCJKRegular","STR_LANGUAGE":"de"},
+    {"STR_DEFAULT":"NotoSansCJKRegular","STR_FONT_1":"NotoSansCJKRegular","STR_FONT_2":"NotoSansCJKRegular","STR_LANGUAGE":"pt"},
+    {"STR_DEFAULT":"NotoSansCJKRegular","STR_FONT_1":"NotoSansCJKRegular","STR_FONT_2":"NotoSansCJKRegular","STR_LANGUAGE":"es"},
+    {"STR_DEFAULT":"NotoSansCJKRegular","STR_FONT_1":"NotoSansCJKRegular","STR_FONT_2":"NotoSansCJKRegular","STR_LANGUAGE":"id"},
+    {"STR_DEFAULT":"NotoSansCJKRegular","STR_FONT_1":"NotoSansCJKRegular","STR_FONT_2":"NotoSansCJKRegular","STR_LANGUAGE":"ko"},
+    {"STR_DEFAULT":"NotoSansCJKRegular","STR_FONT_1":"NotoSansCJKRegular","STR_FONT_2":"NotoSansCJKRegular","STR_LANGUAGE":"th"},
+    {"STR_DEFAULT":"NotoSansCJKRegular","STR_FONT_1":"NotoSansCJKRegular","STR_FONT_2":"NotoSansCJKRegular","STR_LANGUAGE":"ru"},
+    {"STR_DEFAULT":"NotoSansCJKRegular","STR_FONT_1":"NotoSansCJKRegular","STR_FONT_2":"NotoSansCJKRegular","STR_LANGUAGE":"vn"},
+    {"STR_DEFAULT":"NotoSansCJKRegular","STR_FONT_1":"NotoSansCJKRegular","STR_FONT_2":"NotoSansCJKRegular","STR_LANGUAGE":"tw"},
+    {"STR_DEFAULT":"NotoSansCJKRegular","STR_FONT_1":"NotoSansCJKRegular","STR_FONT_2":"NotoSansCJKRegular","STR_LANGUAGE":"jp"},
+    {"STR_DEFAULT":"NotoSansCJKRegular","STR_FONT_1":"NotoSansCJKRegular","STR_FONT_2":"NotoSansCJKRegular","STR_LANGUAGE":"fallback"}
+]

@@ -1,0 +1,9 @@
+.idea/
+logdir/
+root/servers/internal/inner_message/my.txt
+root/client.bat
+root/Client.exe
+bin/
+root/pkg/actor/internal/actorpb/protoc-gen-go.exe
+root/servers/internal/inner_message/protoc-gen-go.exe
+configbin/config/

@@ -1,0 +1,18 @@
+[
+    {"ARRAYSTR_Combine":["1","2","3"],"STR_ID":"123"},
+    {"ARRAYSTR_Combine":["1","2","3"],"STR_ID":"124"},
+    {"ARRAYSTR_Combine":["1","2","3"],"STR_ID":"125"},
+    {"ARRAYSTR_Combine":["2","3","4"],"STR_ID":"134"},
+    {"ARRAYSTR_Combine":["2","3","4"],"STR_ID":"135"},
+    {"ARRAYSTR_Combine":["3","4","5"],"STR_ID":"145"},
+    {"ARRAYSTR_Combine":["2","3","4"],"STR_ID":"234"},
+    {"ARRAYSTR_Combine":["2","3","4"],"STR_ID":"235"},
+    {"ARRAYSTR_Combine":["3","4","5"],"STR_ID":"245"},
+    {"ARRAYSTR_Combine":["3","4","5"],"STR_ID":"345"},
+    {"ARRAYSTR_Combine":["1","2","3","4"],"STR_ID":"1234"},
+    {"ARRAYSTR_Combine":["1","2","3","4"],"STR_ID":"1235"},
+    {"ARRAYSTR_Combine":["1","2","3","4"],"STR_ID":"1245"},
+    {"ARRAYSTR_Combine":["2","3","4","5"],"STR_ID":"1345"},
+    {"ARRAYSTR_Combine":["2","3","4","5"],"STR_ID":"2345"},
+    {"ARRAYSTR_Combine":["1","2","3","4","5"],"STR_ID":"12345"}
+]
